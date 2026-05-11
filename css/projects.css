@@ -1,0 +1,25 @@
+/* ── PROJECTS ── */
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem}
+.proj-card{background:var(--card);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:transform var(--dur) var(--ease),border-color var(--dur) var(--ease)}
+.proj-card:hover{transform:translateY(-4px);border-color:var(--border-h)}
+.proj-head{height:140px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:1.5rem}
+.proj-icon{font-size:2.5rem;position:relative;z-index:1}
+.proj-body{padding:1.5rem}
+.proj-tag{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--rose);margin-bottom:.5rem}
+.proj-body p{font-size:.83rem;color:var(--text-m);line-height:1.65;margin-bottom:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:.15rem .55rem;font-size:.68rem;color:var(--text-d)}
+
+/* ── EXPERIENCE ── */
+.timeline{position:relative;padding-left:2rem}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--rose-d),var(--rose),transparent)}
+.tl-item{position:relative;margin-bottom:3rem;padding-left:1.5rem}
+.tl-item::before{content:'';position:absolute;left:-2rem;top:.5rem;width:10px;height:10px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 3px var(--rose-g)}
+.tl-date{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--rose);margin-bottom:.3rem}
+.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-top:3rem}
+.edu-card{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.5rem;transition:border-color var(--dur) var(--ease)}
+.edu-card:hover{border-color:var(--border-h)}
+.edu-year{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.5rem}
+.edu-inst{font-size:.85rem;color:var(--cream);font-weight:500;margin-bottom:.25rem}
+.edu-qual{font-size:.8rem;color:var(--text-m);margin-bottom:.75rem}
+.edu-grade span{font-size:.8rem;color:var(--text-d)}

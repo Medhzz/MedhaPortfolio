@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Medha Harini · Portfolio</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- cursor -->
+<div id="cur-dot" style="position:fixed;width:6px;height:6px;background:var(--rose);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s"></div>
+<div id="cur-ring" style="position:fixed;width:28px;height:28px;border:1px solid rgba(232,80,106,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all .18s var(--ease)"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#hero" class="nav-logo">M<span>.</span>H</a>
+  <ul class="nav-links">
+    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Journey</a></li>
+    <li><a href="#family">Family</a></li>
+    <li><a href="#friends">Friends</a></li>
+    <li><a href="#fun">Life</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="navBtn" aria-label="menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mobile" id="navMob">
+  <a href="#hero"       onclick="closeNav()">Home</a>
+  <a href="#about"      onclick="closeNav()">About</a>
+  <a href="#skills"     onclick="closeNav()">Skills</a>
+  <a href="#projects"   onclick="closeNav()">Projects</a>
+  <a href="#experience" onclick="closeNav()">Journey</a>
+  <a href="#family"     onclick="closeNav()">Family</a>
+  <a href="#friends"    onclick="closeNav()">Friends</a>
+  <a href="#fun"        onclick="closeNav()">Life</a>
+  <a href="#contact"    onclick="closeNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eye">Software Engineer · Psiog Digital · Chennai</div>
+    <h1 class="hero-name">Medha <em>Harini</em></h1>
+    <p class="hero-sub">B.Tech Information Technology · AI / ML · Cloud · Data</p>
+    <p class="hero-tag">All India Top 1% · 8× IIT Gold Medalist · Bharatanatyam dancer · Adventure junkie · Beach &amp; mountain soul from Chennai 🌊🏔️</p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn btn-p">See My Work</a>
+      <a href="#contact" class="btn btn-o">Say Hello ✦</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div><span class="stat-num">8×</span><span class="stat-lbl">NPTEL Golds</span></div>
+    <div><span class="stat-num">Top 1%</span><span class="stat-lbl">National Rank</span></div>
+    <div><span class="stat-num">8.5</span><span class="stat-lbl">CGPA</span></div>
+    <div><span class="stat-num">3</span><span class="stat-lbl">IIT Internships</span></div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-photo-frame">
+          <img class="about-photo" src="images/2.jpeg" alt="Medha Harini"/>
+        </div>
+        <div class="about-badge"><strong>Medha Harini </strong><span>Sofware Engineer</span></div>
+      </div>
+      <div>
+        <div class="label reveal">About Me</div>
+        <h2 class="sec-title reveal">Passionate about <em>intelligent</em> technology</h2>
+        <p class="bio reveal">I'm Medha Harini Dravidamani — a final-year B.Tech IT student from Sri Sairam Engineering College, Chennai. I ranked in the All India top 1% and won 8 Gold Medals in IIT NPTEL certifications. I was personally felicitated at IIT Madras's NPTEL Star event — something that still feels surreal honestly 😊</p>
+        <p class="bio reveal">I've interned at IIT Madras (built an ed-tech app) and IIT Patna (ML research on UAV-IoT systems), led an IEEE AI project called UniVerseChat, and currently work as a Software Engineer at Psiog Digital. When I'm not coding, I'm probably on a basketball court, on a stage doing Bharatanatyam, or planning my next adventure.</p>
+        <div class="highlights reveal">
+          <div class="hl-card"><div class="hl-icon">🏆</div><h4>IEEE YESIST Winner</h4><p>International youth innovation</p></div>
+          <div class="hl-card"><div class="hl-icon">⭐</div><h4>NPTEL Star Award 2025</h4><p>Felicitated at IIT Madras</p></div>
+          <div class="hl-card"><div class="hl-icon">🚁</div><h4>SAE Drone Finalist</h4><p>Autonomous delivery systems</p></div>
+          <div class="hl-card"><div class="hl-icon">🇮🇳</div><h4>SIH 2023 Finalist</h4><p>Smart India Hackathon</p></div>
+        </div>
+        <div class="meta-tags reveal">
+          <span class="tag">Chennai, India 🌊</span>
+          <span class="tag">Bharatanatyam 10yrs 💃</span>
+          <span class="tag">Basketball 🏀</span>
+          <span class="tag">Adventure seeker 🪂</span>
+          <span class="tag">NSS Volunteer</span>
+          <span class="tag">Tamil · English · Hindi</span>
+        </div>
+        <div class="photo-strip reveal" style="margin-top:2rem;">
+     
+          <img src="images/3.jpeg" alt="Chennai vibes"/>
+          <img src="images/4.jpeg" alt="Nature escape"/>
+          <img src="images/6.jpeg" alt="Backwaters"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills" style="background:var(--deep)">
+  <div class="container">
+    <div class="label reveal">Expertise</div>
+    <h2 class="sec-title reveal">Skills &amp; <em>Capabilities</em></h2>
+    <div class="skills-grid">
+      <div class="skill-group reveal rd1">
+        <span class="sg-icon">🐍</span>
+        <div class="sg-title">Programming</div>
+        <div class="bar-item"><div class="bar-top"><span>Python</span><span class="bar-pct">90%</span></div><div class="bar-track"><div class="bar-fill" data-w="90"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>C++</span><span class="bar-pct">82%</span></div><div class="bar-track"><div class="bar-fill" data-w="82"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>Java</span><span class="bar-pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>R</span><span class="bar-pct">72%</span></div><div class="bar-track"><div class="bar-fill" data-w="72"></div></div></div>
+      </div>
+      <div class="skill-group reveal rd2">
+        <span class="sg-icon">🤖</span>
+        <div class="sg-title">AI / ML</div>
+        <div class="bar-item"><div class="bar-top"><span>Machine Learning</span><span class="bar-pct">85%</span></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>Deep Learning / CV</span><span class="bar-pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>Generative AI / LLM</span><span class="bar-pct">78%</span></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>LangChain</span><span class="bar-pct">75%</span></div><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
+      </div>
+      <div class="skill-group reveal rd3">
+        <span class="sg-icon">🗄️</span>
+        <div class="sg-title">Data &amp; Cloud</div>
+        <div class="bar-item"><div class="bar-top"><span>SQL Server / MySQL</span><span class="bar-pct">88%</span></div><div class="bar-track"><div class="bar-fill" data-w="88"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>Data Modeling</span><span class="bar-pct">84%</span></div><div class="bar-track"><div class="bar-fill" data-w="84"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>Azure Cloud</span><span class="bar-pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>Big Data / Spark</span><span class="bar-pct">76%</span></div><div class="bar-track"><div class="bar-fill" data-w="76"></div></div></div>
+      </div>
+      <div class="skill-group reveal rd4">
+        <span class="sg-icon">📱</span>
+        <div class="sg-title">Dev &amp; Design</div>
+        <div class="bar-item"><div class="bar-top"><span>Flutter / Firebase</span><span class="bar-pct">78%</span></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>Figma / UI-UX</span><span class="bar-pct">76%</span></div><div class="bar-track"><div class="bar-fill" data-w="76"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>Bubble.io</span><span class="bar-pct">74%</span></div><div class="bar-track"><div class="bar-fill" data-w="74"></div></div></div>
+        <div class="bar-item"><div class="bar-top"><span>IoT / Blockchain</span><span class="bar-pct">72%</span></div><div class="bar-track"><div class="bar-fill" data-w="72"></div></div></div>
+      </div>
+    </div>
+    <div style="margin-top:2.5rem">
+      <div class="label reveal" style="margin-bottom:1rem">IIT NPTEL Gold Medals</div>
+      <div class="cert-pills reveal">
+        <span class="cert-pill">☁️ Cloud Computing — IIT Kharagpur</span>
+        <span class="cert-pill">🧠 Machine Learning — IIT Kharagpur</span>
+        <span class="cert-pill">📊 Big Data — IIT Patna</span>
+        <span class="cert-pill">🌐 IoT — IIT Kharagpur</span>
+        <span class="cert-pill">🏭 Industrial IoT — IIT Kharagpur</span>
+        <span class="cert-pill">💡 Design Thinking — IIT Madras</span>
+        <span class="cert-pill">🖥️ HCI — IIT Guwahati</span>
+        <span class="cert-pill">⛓️ Blockchain — IIT Kharagpur</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="label reveal">Work</div>
+    <h2 class="sec-title reveal">Featured <em>Projects</em></h2>
+    <div class="proj-grid">
+      <article class="proj-card reveal rd1">
+        <div class="proj-head" style="background:linear-gradient(135deg,#0a0a1a,#1a1a3d)">
+          <div class="proj-icon">🤖</div><span class="proj-num">01</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">IEEE · Generative AI · Current</div>
+          <h3>UniVerseChat — AI Sign Language Bridge</h3>
+          <p>AI-powered communication bridge translating sign language gestures into text &amp; speech using Computer Vision, LangChain, and Claude Opus. Presented at IEEE International Conference, Bangalore.</p>
+          <div class="chips"><span class="chip">LangChain</span><span class="chip">Claude Opus</span><span class="chip">Computer Vision</span><span class="chip">Deep Learning</span><span class="chip">TTS</span></div>
+        </div>
+      </article>
+      <article class="proj-card reveal rd2">
+        <div class="proj-head" style="background:linear-gradient(135deg,#0a1218,#0a2a35)">
+          <div class="proj-icon">🚁</div><span class="proj-num">02</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">IIT Patna · ML Research</div>
+          <h3>Meta-Learning vs RL for UAV-IoT Systems</h3>
+          <p>Comparative ML research demonstrating Meta-Learning outperforms Reinforcement Learning in dynamic UAV environments. Meta-Learning converged 3× faster in changing conditions.</p>
+          <div class="chips"><span class="chip">Meta-Learning</span><span class="chip">Reinforcement Learning</span><span class="chip">Scikit-learn</span><span class="chip">NumPy</span><span class="chip">Pandas</span></div>
+        </div>
+      </article>
+      <article class="proj-card reveal rd3">
+        <div class="proj-head" style="background:linear-gradient(135deg,#1a0812,#3d1a2a)">
+          <div class="proj-icon">📱</div><span class="proj-num">03</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">IIT Madras · EdTech</div>
+          <h3>Aural App — Educational Platform</h3>
+          <p>Designed and developed an educational app under the NPTEL internship at IIT Madras using Design Thinking methodology. Built with Flutter, Firebase and Bubble.io — full SDLC involvement.</p>
+          <div class="chips"><span class="chip">Flutter</span><span class="chip">Firebase</span><span class="chip">Bubble.io</span><span class="chip">Figma</span><span class="chip">Design Thinking</span></div>
+        </div>
+      </article>
+      <article class="proj-card reveal rd4">
+        <div class="proj-head" style="background:linear-gradient(135deg,#1a0a00,#3d2200)">
+          <div class="proj-icon">🚚</div><span class="proj-num">04</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">SAE · Autonomous Systems</div>
+          <h3>MedDel — Autonomous Drone Delivery</h3>
+          <p>Intelligent UAV system for medical supply delivery with OTP-based secure delivery mechanism. Built mobile app for real-time drone tracking. SAE Drone Project Finalist.</p>
+          <div class="chips"><span class="chip">Mission Planner</span><span class="chip">Android Studio</span><span class="chip">IoT</span><span class="chip">OTP Auth</span></div>
+        </div>
+      </article>
+      <article class="proj-card reveal rd1">
+        <div class="proj-head" style="background:linear-gradient(135deg,#0a0a0a,#1a2a1a)">
+          <div class="proj-icon">⛓️</div><span class="proj-num">05</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">Microsoft CMT · Conference Paper</div>
+          <h3>Blockchain Supply Chain Management</h3>
+          <p>Blockchain-based supply chain system using smart contracts for pharmaceutical traceability. Published and presented at Microsoft CMT International Conference.</p>
+          <div class="chips"><span class="chip">Blockchain</span><span class="chip">Smart Contracts</span><span class="chip">Solidity</span></div>
+        </div>
+      </article>
+      <article class="proj-card reveal rd2">
+        <div class="proj-head" style="background:linear-gradient(135deg,#1a1a0a,#2a2a1a)">
+          <div class="proj-icon">🏠</div><span class="proj-num">06</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">IEEE Conference · IoT</div>
+          <h3>Smart Home Automation System</h3>
+          <p>IoT-enabled smart home system for intelligent device control and monitoring. Presented at IEEE International Conference — applied IoT + embedded systems integration.</p>
+          <div class="chips"><span class="chip">IoT</span><span class="chip">Embedded Systems</span><span class="chip">IEEE</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience" style="background:var(--deep)">
+  <div class="container">
+    <div class="label reveal">Journey</div>
+    <h2 class="sec-title reveal">Experience &amp; <em>Education</em></h2>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-date">Feb 2026 – Present</div>
+        <div class="tl-role">Software Engineer</div>
+        <div class="tl-org">Psiog Digital, Chennai (Campus Hire)</div>
+        <ul class="tl-desc">
+          <li>Building data analytics solutions in C++, SQL Server, and data modeling</li>
+          <li>Applying ML and analytics in real client-facing work under SCG department</li>
+          <li>Growing from campus skills to actual industry delivery — loving every bit of it</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-date">Jan 2025 – Apr 2025</div>
+        <div class="tl-role">Research Intern — EdTech</div>
+        <div class="tl-org">IIT Madras, Chennai</div>
+        <ul class="tl-desc">
+          <li>Developed the Aural App under NPTEL internship with Aural App Pvt. Ltd.</li>
+          <li>Applied Design Thinking across full SDLC — requirements to user testing</li>
+          <li>Worked directly under Prof. Bala Ramadurai's mentorship</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-date">Jan 2025 – Feb 2025</div>
+        <div class="tl-role">Research Intern — ML &amp; UAV</div>
+        <div class="tl-org">IIT Patna, Bihar</div>
+        <ul class="tl-desc">
+          <li>Comparative study: Meta-Learning vs Reinforcement Learning for UAV-IoT systems</li>
+          <li>Demonstrated Meta-Learning outperforms RL in dynamic environments</li>
+          <li>Used Pandas, NumPy, Scikit-learn, Jupyter for implementation &amp; evaluation</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-date">Nov 2023 – Jul 2024</div>
+        <div class="tl-role">Team Member — SAE Drone Project</div>
+        <div class="tl-org">Society of Automotive Engineers</div>
+        <ul class="tl-desc">
+          <li>Designed autonomous UAV delivery system for emergency medical supplies</li>
+          <li>Built OTP-based secure delivery + real-time mobile tracking app</li>
+          <li>Finalist at SAE Drone Project competition</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:4rem">
+      <div class="label reveal">Education</div>
+      <div class="edu-grid">
+        <div class="edu-card reveal rd1">
+          <div class="edu-year">2022 – 2026</div>
+          <div class="edu-inst">Sri Sairam Engineering College, Anna University</div>
+          <div class="edu-qual">B.Tech — Information Technology</div>
+          <div class="edu-grade">8.5 <span>CGPA</span></div>
+        </div>
+        <div class="edu-card reveal rd2">
+          <div class="edu-year">2022</div>
+          <div class="edu-inst">The PSBB Millennium School, Gerugambakkam</div>
+          <div class="edu-qual">12th — CBSE</div>
+          <div class="edu-grade">92 <span>%</span></div>
+        </div>
+        <div class="edu-card reveal rd3">
+          <div class="edu-year">2020</div>
+          <div class="edu-inst">The PSBB Millennium School, Gerugambakkam</div>
+          <div class="edu-qual">10th — CBSE</div>
+          <div class="edu-grade">94 <span>%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMILY -->
+<section class="section" id="family">
+  <div class="container">
+    <div class="label reveal">My People</div>
+    <h2 class="sec-title reveal">The ones who <em>made me</em></h2>
+    <div class="family-row">
+      <div class="fam-text reveal">
+        <p class="fam-quote">"Behind every dream, every late-night commit, and every stage performance — there's a family that believed first."</p>
+        <div class="fam-members">
+          <div class="fam-person"><div class="fam-dot"></div><span class="fam-name">Dravidamani Kuppan</span><span class="fam-role">— Appa, my foundation 🙏</span></div>
+          <div class="fam-person"><div class="fam-dot"></div><span class="fam-name">Priya</span><span class="fam-role">— Amma, my constant support ❤️</span></div>
+          <div class="fam-person"><div class="fam-dot"></div><span class="fam-name">Bhavya</span><span class="fam-role">— My younger sister, my partner in chaos 🌟</span></div>
+        </div>
+        <p style="margin-top:1.5rem;font-size:.88rem;color:var(--text-d);font-style:italic;">Small family, big energy. Ayyappanthangal, Chennai is home 🏠</p>
+      </div>
+      <div class="polaroid-wrap">
+  <div class="polaroid">
+    <img src="images/7.jpeg" alt="Family photo" />
+    <p class="polaroid-caption">with love, always</p>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- FRIENDS -->
+<section class="section" id="friends" style="background:var(--deep)">
+  <div class="container">
+    <div class="label reveal">My Tribe</div>
+    <h2 class="sec-title reveal">Friends who <em>showed up</em></h2>
+    <p class="friends-intro reveal">Conference halls, competition stages, office floors — they've been there for all of it. From Batch 2026 to Psiog corridors, these people make every crazy idea feel possible.</p>
+    <div class="friends-grid">
+      <div class="friend-card reveal rd1">
+        <img class="friend-img" src="images/9.jpeg" alt="Batch 2026 college friends"/>
+        <div class="friend-overlay">
+          <div class="friend-label">Sri Sairam · Batch 2026</div>
+          <div class="friend-desc">The whole crew — conferences, SAE drone project, IEEE events, SIH hackathon, and a farewell called "Bonds & Beyond" 🎓</div>
+        </div>
+      </div>
+      <div class="friend-card reveal rd2">
+        <img class="friend-img" src="images/10.jpeg" alt="College girl gang"/>
+        <div class="friend-overlay">
+          <div class="friend-label">Girl Gang · Always 💛</div>
+          <div class="friend-desc">The ones who dressed up for every event, showed up for every presentation, and made college actually fun</div>
+        </div>
+      </div>
+      <div class="friend-card reveal rd3">
+        <img class="friend-img" src="images/11.jpeg" alt="Psiog office friends"/>
+        <div class="friend-overlay">
+          <div class="friend-label">Psiog Fam · Chennai</div>
+          <div class="friend-desc">Supportive, fun, aligned vibes — making the work life genuinely good. We grow together 🚀</div>
+        </div>
+      </div>
+      <div class="friend-card reveal rd4">
+        <img class="friend-img" src="images/12.jpeg" alt="Bonds and Beyond farewell"/>
+        <div class="friend-overlay">
+          <div class="friend-label">"Bonds & Beyond" · Farewell 2026</div>
+          <div class="friend-desc">4 years of memories, 4 years of growing up together. This one hit different 🥹</div>
+        </div>
+      </div>
+      <div class="friend-card reveal rd1">
+        <img class="friend-img" src="images/13.jpeg" alt="Three friends"/>
+        <div class="friend-overlay">
+          <div class="friend-label">The Close Circle</div>
+          <div class="friend-desc">Mirror selfie energy — the ones you call at 2am when the code won't compile 😂</div>
+        </div>
+      </div>
+      <div class="friend-card reveal rd2">
+        <img class="friend-img" src="images/14.jpeg" alt="Zipline adventure with friend"/>
+        <div class="friend-overlay">
+          <div class="friend-label">Adventure Partner 🪂</div>
+          <div class="friend-desc">Helmets on, thumbs up — the sister who says yes to every adventure. Zipline energy!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUN / LIFE -->
+<section class="section" id="fun">
+  <div class="container">
+    <div class="label reveal">Beyond the Resume</div>
+    <h2 class="sec-title reveal">Life outside <em>the screen</em></h2>
+
+    <div class="fun-grid">
+      <div class="fun-card reveal rd1">
+        <div class="fun-icon">💃</div>
+        <div class="fun-title">Bharatanatyam</div>
+        <div class="fun-desc">10 years of classical dance training. The stage is my second home — Bharatanatyam, Kathak, Folk, Western. All forms, one heart.</div>
+      </div>
+      <div class="fun-card reveal rd2">
+        <div class="fun-icon">🏀</div>
+        <div class="fun-title">Basketball &amp; Tennis</div>
+        <div class="fun-desc">Basketball is serious business. Tennis too. Also played Kho Kho and Badminton. Sport keeps me sane between deadlines.</div>
+      </div>
+      <div class="fun-card reveal rd3">
+        <div class="fun-icon">🌊🏔️</div>
+        <div class="fun-title">Beach &amp; Mountain</div>
+        <div class="fun-desc">Both, depending on the mood. Some days Marina beach sunsets. Other days misty hill stations. Chennai girl with wanderlust ✈️</div>
+      </div>
+      <div class="fun-card reveal rd4">
+        <div class="fun-icon">🤝</div>
+        <div class="fun-title">NSS Volunteer</div>
+        <div class="fun-desc">Teaching underprivileged students, community service, social work. Because technology should uplift people, not just processes.</div>
+      </div>
+    </div>
+
+    <!-- Adventure Section -->
+    <div class="adv-section reveal">
+      <h3 class="adv-heading">🪂 Adventure is my love language</h3>
+      <p style="color:var(--text-m);margin-bottom:1.25rem;font-size:.9rem;">I genuinely believe the best stories start with "what's the worst that could happen?" — here's proof:</p>
+      <div class="adv-pills">
+        <span class="adv-pill">🪂 Paragliding</span>
+        <span class="adv-pill">🤿 Scuba Diving</span>
+        <span class="adv-pill">🪢 Bungee Jumping</span>
+        <span class="adv-pill">🎢 Zip Lining</span>
+        <span class="adv-pill">🏔️ Trekking</span>
+        <span class="adv-pill">🌊 Beach camping</span>
+      </div>
+      <div class="adv-mosaic">
+        <div class="m1"><img src="images/15.jpeg" alt="Mountain heart"/></div>
+        <div class="m2"><img src="images/14.jpeg" alt="Forest vibes"/></div>
+        <div class="m3"><img src="images/18.jpeg" alt="Zipline adventure"/></div>
+        <div class="m4"><img src="images/17.jpeg" alt="Backwater boat ride"/></div>
+      </div>
+    </div>
+
+
+<!-- CONTACT -->
+<section class="section" id="contact" style="background:var(--deep)">
+  <div class="container">
+    <div class="contact-inner">
+      <div>
+        <div class="label reveal">Connect</div>
+        <h2 class="contact-big reveal">Let's build <em>something</em> together.</h2>
+        <p class="reveal" style="color:var(--text-m);margin-bottom:.5rem">Open to opportunities, collaborations, and good conversations. Drop a message — I always reply 😊</p>
+        <div class="contact-links reveal">
+          <a class="c-link" href="mailto:medhaharini.d@gmail.com">
+            <div class="c-link-icon">✉️</div>
+            <div><span class="c-link-label">Personal Email</span><span class="c-link-val">medhaharini.d@gmail.com</span></div>
+          </a>
+          <a class="c-link" href="mailto:medha.harini@psiog.com">
+            <div class="c-link-icon">💼</div>
+            <div><span class="c-link-label">Work Email</span><span class="c-link-val">medha.harini@psiog.com</span></div>
+          </a>
+          <a class="c-link" href="tel:+919345540232">
+            <div class="c-link-icon">📱</div>
+            <div><span class="c-link-label">Phone</span><span class="c-link-val">+91 93455 40232</span></div>
+          </a>
+          <a class="c-link" href="https://linkedin.com/in/medha-harini-dravidamani" target="_blank">
+            <div class="c-link-icon">🔗</div>
+            <div><span class="c-link-label">LinkedIn</span><span class="c-link-val">medha-harini-dravidamani</span></div>
+          </a>
+        </div>
+      </div>
+      <div class="reveal rd2">
+        <form class="form" onsubmit="handleForm(event)">
+          <div class="form-row">
+            <div><label for="fn">Name</label><input id="fn" type="text" placeholder="Your name"/></div>
+            <div><label for="fe">Email</label><input id="fe" type="email" placeholder="you@example.com"/></div>
+          </div>
+          <div><label for="fs">Subject</label><input id="fs" type="text" placeholder="What's up?"/></div>
+          <div><label for="fm">Message</label><textarea id="fm" placeholder="Tell me something interesting..."></textarea></div>
+          <button type="submit" class="btn btn-p" style="width:100%;justify-content:center">Send Message ✦</button>
+          <p id="form-msg" style="text-align:center;color:var(--gold);font-size:.82rem;margin-top:.5rem;display:none">✓ Message sent! I'll get back to you soon 😊</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 <span>Medha Harini Dravidamani</span> · Crafted with ❤️ from Chennai</p>
+  <div class="footer-links">
+    <a href="#hero">Home</a><a href="#projects">Work</a><a href="#fun">Life</a><a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
