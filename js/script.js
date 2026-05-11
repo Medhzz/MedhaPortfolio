@@ -76,3 +76,30 @@ if (polaroid) {
     polaroid.style.boxShadow = '0 8px 32px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)';
   });
 }
+
+
+// Count-up animation for stats
+const countObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.querySelectorAll('.stat-num[data-count]').forEach(el => {
+      const target = parseFloat(el.dataset.count);
+      const decimal = parseInt(el.dataset.decimal || '0');
+      const suffix = el.dataset.suffix || '';
+      const duration = 1500;
+      const start = performance.now();
+      function update(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        const val = target * ease;
+        el.textContent = val.toFixed(decimal) + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    });
+    countObs.unobserve(e.target);
+  });
+}, { threshold: 0.5 });
+
+const heroStats = document.querySelector('.hero-stats');
+if (heroStats) countObs.observe(heroStats);
